@@ -1,0 +1,16 @@
+:root {
+  --main-font: 'Dosis', sans-serif;
+}
+
+body, div, p {
+  margin: 0;
+  padding: 0
+}
+
+.app-container {
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

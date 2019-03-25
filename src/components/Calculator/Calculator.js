@@ -6,8 +6,8 @@ import './Calculator.css';
 class Calculator extends Component {
   state = {
     displayValue: '0',    // inputed or computed value to be displayed in <Display />
-    numbers: [],          // array of strings used for the number keys in <Keys />
-    operators: [],        // array of strings used for the operator keys in <Keys />
+    numbers: ['9', '8', '7', '6', '5', '4', '3', '2', '1', '.', '0', 'ce'],          // array of strings used for the number keys in <Keys />
+    operators: ['/', '*', '-', '+'],        // array of strings used for the operator keys in <Keys />
     selectedOperator: '', // operator selected for math operation held in memory
     storedValue: '',      // inputed or computed value to use for math operation
   }

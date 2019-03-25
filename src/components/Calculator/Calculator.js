@@ -13,8 +13,30 @@ class Calculator extends Component {
   }
 
   // Updates and renders the displayed value to the DOM
-  updateDisplay = () => {
-    console.log('update display');
+  updateDisplay = value => {
+    let { displayValue } = this.state;
+
+    // Prevent multiple decimals from being displayed
+    if (value === '.' && displayValue.includes('.')) {
+      value = '';
+    }
+
+    if (value !== 'ce') {
+      // Replace displayValue with value if displayValue is '0'
+      // Otherwise, concatenate displayValue and value
+      displayValue === '0' ? displayValue = value : displayValue += value;
+    } else {
+
+      // Delete last character in displayValue
+      displayValue = displayValue.substr(0, displayValue.length - 1);
+
+      // If displayValue is an empty string, set displayValue to '0'
+      if (displayValue === '') {
+        displayValue = '0';
+      }
+    }
+
+    this.setState({ displayValue });
   }
 
   // Saves the chosen operator to the component state object
@@ -46,7 +68,7 @@ class Calculator extends Component {
         />
       </div>
     );
-  }
+  };
 }
 
 export default Calculator;

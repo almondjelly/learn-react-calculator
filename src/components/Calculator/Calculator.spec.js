@@ -77,7 +77,7 @@ describe('updateDisplay', () => {
   });
 
   it('sets displayValue to zero if displayValue is an empty string', () => {
-    wrapper.instance.updateDisplay('ce');
-    expect(wrapper.state('displayValyue')).toEqual('0');
+    wrapper.instance().updateDisplay('ce');
+    expect(wrapper.state('displayValue')).toEqual('0');
   });
 });

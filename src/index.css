@@ -2,12 +2,21 @@
   /* Background colors */
   --calculator-background-color: coral;
   --display-background-color: #ffe8e8;
+  --action-key-color: #545454;
+  --action-key-hover: #2a2a2a;
+  --number-key-color: #696969;
+  --number-key-color-hover: #3f3f3f;
+  --submit-key-color: #d18800;
+  --submit-key-color-hover: #aa6e00;
 
   /* Font */
   --main-font: 'Dosis', sans-serif;
   --display-text-color: #d11f1f;
   --display-text-size: 4em;
   --display-text-weight: 400;
+  --key-text-color: #d3d3d3;
+  --key-text-size: 3em;
+  --key-text-weight: 700;
 
   /* Dimensions */
   --calculator-height: 72%;
@@ -22,6 +31,7 @@
   :root {
     /* Font */
     --display-text-size: 10em;
+    --key-text-size: 6em;
 
     /* Dimensions */
     --calculator-height: 100%;

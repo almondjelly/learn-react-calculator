@@ -1,12 +1,27 @@
 :root {
+  /* Background colors */
   --calculator-background-color: coral;
+  --display-background-color: #ffe8e8;
+
+  /* Font */
   --main-font: 'Dosis', sans-serif;
+  --display-text-color: #d11f1f;
+  --display-text-size: 4em;
+  --display-text-weight: 400;
+
+  /* Dimensions */
   --calculator-height: 72%;
   --calculator-width: 36%;
+  --display-height: 24%;
+  --display-width: 92%;
 }
 
 @media screen and (max-width: 1024px) {
   :root {
+    /* Font */
+    --display-text-size: 10em;
+
+    /* Dimensions */
     --calculator-height: 100%;
     --calculator-width: 100%;
   }
